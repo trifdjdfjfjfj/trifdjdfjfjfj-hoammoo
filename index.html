@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>hoammo.today — Simple, modern landing</title>
+  <meta name="description" content="hoammo.today — short tagline or mission" />
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="/">hoammo<span>.today</span></a>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1>hoammo.today</h1>
+        <p class="lead">A simple modern site — put your headline, mission, or product pitch here.</p>
+        <p><a class="btn" href="#contact">Get in touch</a> <a class="btn ghost" href="#features">Learn more</a></p>
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <h2>About</h2>
+      <p>Describe what hoammo.today is, who it's for, and the value it delivers. Replace this placeholder with your content.</p>
+    </section>
+
+    <section id="features" class="section container grid">
+      <div class="card">
+        <h3>Fast</h3>
+        <p>Static HTML/CSS for instant load and low cost hosting.</p>
+      </div>
+      <div class="card">
+        <h3>Responsive</h3>
+        <p>Looks good on desktop and mobile out of the box.</p>
+      </div>
+      <div class="card">
+        <h3>Easy to host</h3>
+        <p>Deploy to GitHub Pages, Vercel, or any static host.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section container">
+      <h2>Contact</h2>
+      <p>Want me to build or customize this? Email: <a href="mailto:hello@hoammo.today">hello@hoammo.today</a></p>
+      <p class="muted">Or replace with a contact form/service (Formspree, Netlify Forms, etc.).</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> hoammo.today — All rights reserved.</p>
+      <p class="muted">Built with a lightweight static template. Customize as needed.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
