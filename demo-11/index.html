@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Demo 11 — Community Center (inspired)</title>
+  <meta name="description" content="Demo landing page inspired by a community center site — placeholder content for demo/testing." />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="/">DemoCenter<span>.local</span></a>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#programs">Programs</a>
+        <a href="#events">Events</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1>Demo Community Center</h1>
+        <p class="lead">A friendly place for learning, activities, and local events — this is a demo placeholder site.</p>
+        <p><a class="btn" href="#contact">Get in touch</a> <a class="btn ghost" href="#programs">Our programs</a></p>
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <h2>About Us</h2>
+      <p>We provide community-driven classes, family activities, and support services. Replace this text with your real content.</p>
+    </section>
+
+    <section id="programs" class="section container grid">
+      <div class="card">
+        <h3>Education</h3>
+        <p>Workshops, language classes, and computer literacy for all ages.</p>
+      </div>
+      <div class="card">
+        <h3>Wellness</h3>
+        <p>Yoga, meditation, and health seminars to support local wellbeing.</p>
+      </div>
+      <div class="card">
+        <h3>Events</h3>
+        <p>Community festivals, markets, and volunteer meetups.</p>
+      </div>
+    </section>
+
+    <section id="events" class="section container">
+      <h2>Upcoming Events</h2>
+      <ul class="events">
+        <li><strong>Saturday Market</strong> — April 10, 10:00 — 14:00</li>
+        <li><strong>English Class</strong> — Tue & Thu, 18:30 — 20:00</li>
+        <li><strong>Kids Coding Camp</strong> — Summer sessions</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="section container">
+      <h2>Contact</h2>
+      <p>Use the form below to send a message (demo — form submits to Formspree if you replace the action).</p>
+      <form class="contact-form" action="https://formspree.io/f/yourformid" method="POST">
+        <label>Full name<input type="text" name="name" required></label>
+        <label>Email<input type="email" name="email" required></label>
+        <label>Message<textarea name="message" rows="4" required></textarea></label>
+        <p><button class="btn" type="submit">Send</button></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Demo Community — for demonstration only.</p>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
